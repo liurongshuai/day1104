@@ -10,6 +10,7 @@ class User(models.Model):
         ('male', '男性'),
         ('female', '女性'),
         ('no', '无性'),
+        ('hidden','隐藏'),
     )
 
     phonenum = models.CharField(max_length=20, unique=True, verbose_name='手机号')
